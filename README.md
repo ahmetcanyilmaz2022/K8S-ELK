@@ -1,5 +1,5 @@
 
-# EFK Set up on Minikube Cluster  
+# EFK Set
 
 Elasticsearch will be installed first as a Statefulset which will store all the data as indexed
 Fluend will be installed as daemonset so that logs can be captured from all Nodes
@@ -22,4 +22,8 @@ Kibana will be installed as deployment so that it can invokes the Elasticsearch 
 # 4. Validate the EFK Cluster  
     kubectl run nginx --image=nginx --restart=Never
     kubectl run mycurlpod --image=curlimages/curl -i --tty -- sh
+
+
+
+    önemli not statefull set tarafında vol ve pvc tarafında verim alınamaz ise son eklediğim deployment seti kullanınız .*****************:) son dk gelişmesi
 
